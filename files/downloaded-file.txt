@@ -1,0 +1,333 @@
+﻿String Theory
+University of Cambridge Part III Mathematical Tripos
+
+
+Dr David Tong
+   Department of Applied Mathematics and Theoretical Physics,
+   Centre for Mathematical Sciences,
+   Wilberforce Road,
+   Cambridge, CB3 OWA, UK
+
+
+ 0. Introduction
+String theory is an ambitious project. It purports to be an all-encompassing theory
+of the universe, unifying the forces of nature, including gravity, in a single quantum
+mechanical framework.
+
+
+   The premise of string theory is that, at the fundamental level, matter does not consist
+of point-particles but rather of tiny loops of string. From this slightly absurd beginning,
+the laws of physics emerge. General relativity, electromagnetism and Yang-Mills gauge
+theories all appear in a surprising fashion. However, they come with baggage. String
+theory gives rise to a host of other ingredients, most strikingly extra spatial dimensions
+of the universe beyond the three that we have observed. The purpose of this course is
+to understand these statements in detail.
+
+
+   These lectures di er from most other courses that you will take in a physics degree.
+String theory is speculative science. There is no experimental evidence that string
+theory is the correct description of our world and scant hope that hard evidence will
+arise in the near future. Moreover, string theory is very much a work in progress and
+certain aspects of the theory are far from understood. Unresolved issues abound and
+it seems likely that the final formulation has yet to be written. For these reasons, I’ll
+begin this introduction by suggesting some answers to the question: Why study string
+theory?
+
+
+Reason 1. String theory is a theory of quantum gravity
+String theory unifies Einstein’s theory of general relativity with quantum mechanics.
+Moreover, it does so in a manner that retains the explicit connection with both quantum
+theory and the low-energy description of spacetime.
+
+
+  But quantum gravity contains many puzzles, both technical and conceptual. What
+does spacetime look like at the shortest distance scales? How can we understand
+physics if the causal structure fluctuates quantum mechanically? Is the big bang truely
+the beginning of time? Do singularities that arise in black holes really signify the end
+of time? What is the microscopic origin of black hole entropy and what is it telling
+us? What is the resolution to the information paradox? Some of these issues will be
+reviewed later in this introduction.
+
+
+  Whether or not string theory is the true description of reality, it orders a framework
+in which one can begin to explore these issues. For some questions, string theory
+has given very impressive and compelling answers. For others, string theory has been
+almost silent.
+
+
+
+
+ Reason 2. String theory may be the theory of quantum gravity
+With broad brush, string theory looks like an extremely good candidate to describe the
+real world. At low-energies it naturally gives rise to general relativity, gauge theories,
+scalar fields and chiral fermions. In other words, it contains all the ingredients that
+make up our universe. It also gives the only presently credible explanation for the value
+of the cosmological constant although, in fairness, I should add that the explanation is
+so distasteful to some that the community is rather amusingly split between whether
+this is a good thing or a bad thing. Moreover, string theory incorporates several ideas
+which do not yet have experimental evidence but which are considered to be likely
+candidates for physics beyond the standard model. Prime examples are supersymmetry
+and axions.
+
+
+   However, while the broad brush picture looks good, the finer details have yet to
+be painted. String theory does not provide unique predictions for low-energy physics
+but instead orders a bewildering array of possibilities, mostly dependent on what is
+hidden in those extra dimensions. Partly, this problem is inherent to any theory of
+quantum gravity: as we’ll review shortly, it’s a long way down from the Planck scale
+to the domestic energy scales explored at the LHC. Using quantum gravity to extract
+predictions for particle physics is akin to using QCD to extract predictions for how
+coffee makers work. But the mere fact that it’s hard is little comfort if we’re looking
+for convincing evidence that string theory describes the world in which we live.
+
+
+   While string theory cannot at present offer falsifiable predictions, it has nonetheless
+inspired new and imaginative proposals for solving outstanding problems in particle
+physics and cosmology. There are scenarios in which string theory might reveal itself
+in forthcoming experiments. Perhaps we’ll find extra dimensions at the LHC, perhaps
+we’ll see a network of fundamental strings stretched across the sky, or perhaps we’ll
+detect some feature of non-Gaussianity in the CMB that is characteristic of D-branes
+at work during inflation. My personal feeling however is that each of these is a long
+shot and we may not know whether string theory is right or wrong within our lifetimes.
+Of course, the history of physics is littered with naysayers, wrongly suggesting that
+various theories will never be testable. With luck, I’ll be one of them.
+
+
+Reason 3. String theory provides new perspectives on gauge theories
+String theory was born from attempts to understand the strong force. Almost forty
+years later, this remains one of the prime motivations for the subject. String theory
+provides tools with which to analyze down-to-earth aspects of quantum field theory
+that are far removed from high-falutin’ ideas about gravity and black holes.
+
+
+
+
+    Of immediate relevance to this course are the pedagogical reasons to invest time in
+string theory. At heart, it is the study of conformal field theory and gauge symmetry.
+The techniques that we’ll learn are not isolated to string theory, but apply to countless
+systems which have direct application to real world physics.
+
+
+  On a deeper level, string theory provides new and very surprising methods to under-
+stand aspects of quantum gauge theories. Of these, the most startling is the AdS/CFT
+correspondence, first conjectured by Juan Maldacena, which gives a relationship be-
+tween strongly coupled quantum field theories and gravity in higher dimensions. These
+ideas have been applied in areas ranging from nuclear physics to condensed matter
+physics and have provided qualitative (and arguably quantitative) insights into strongly
+coupled phenomena.
+
+
+Reason 4. String theory provides new results in mathematics
+For the past 250 years, the close relationship between mathematics and physics has
+been almost a one-way street: physicists borrowed many things from mathematicians
+but, with a few noticeable exceptions, gave little back. In recent times, that has
+changed. Ideas and techniques from string theory and quantum field theory have been
+employed to give new “proofs” and, perhaps more importantly, suggest new directions
+and insights in mathematics. The most well known of these is mirror symmetry, a
+relationship between topologically different Calabi-Yau manifolds.
+
+
+   The four reasons described above also crudely characterize the string theory commu-
+nity: there are “relativists” and “phenomenologists” and “field theorists” and “math-
+ematicians”. Of course, the lines between these different sub-disciplines are not fixed
+and one of the great attractions of string theory is its ability to bring together people
+working in different areas — from cosmology to condensed matter to pure mathematics
+— and provide a framework in which they can profitably communicate. In my opinion,
+it is this cross-fertilization between fields which is the greatest strength of string theory.
+
+
+0.1 Quantum Gravity
+This is a starter course in string theory. Our focus will be on the perturbative approach
+to the bosonic string and, in particular, why this gives a consistent theory of quantum
+gravity. Before we leap into this, it is probably best to say a few words about quantum
+gravity itself. Like why it’s hard. And why it’s important. (And why it’s not).
+
+
+Throughout these lectures we work in units with ~ = c = 1. The Planck mass Mpl
+defines an energy scale
+
+
+  There are a couple of simple lessons that we can already take from this. The first is
+that the relevant coupling in the quantum theory is 1/Mpl . To see that this is indeed
+the case from the perspective of the action, we consider small perturbations around flat
+Minkowski space,
+
+
+The factor of 1/Mpl is there to ensure that when we expand out the Einstein-Hilbert
+action, the kinetic term for h is canonically normalized, meaning that it comes with no
+powers of Mpl . This then gives the kind of theory that you met in your first course on
+quantum field theory, albeit with an infinite series of interaction terms,
+
+
+Each of these terms is schematic: if you were to do this explicitly, you would find a
+mess of indices contracted in different ways. We see that the interactions are suppressed
+by powers of Mpl . This means that quantum perturbation theory is an expansion in
+the dimensionless ratio E 2 /Mpl2 , where E is the energy associated to the process of
+interest. We learn that gravity is weak, and therefore under control, at low-energies.
+But gravitational interactions become strong as the energy involved approaches the
+Planck scale. In the language of the renormalization group, couplings of this type are
+known as irrelevant.
+
+
+  The second lesson to take away is that the Planck scale Mpl is very very large. The
+LHC will probe the electroweak scale, MEW 103 GeV. The ratio is MEW /Mpl 10 15 .
+For this reason, quantum gravity will not affect your daily life, even if your daily life
+involves the study of the most extreme observable conditions in the universe.
+
+
+ Gravity is Non-Renormalizable
+Quantum field theories with irrelevant couplings are typically ill-behaved at high-
+energies, rendering the theory ill-defined. Gravity is no exception. Theories of this
+type are called non-renormalizable, which means that the divergences that appear in
+the Feynman diagram expansion cannot be absorbed by a finite number of countert-
+erms. In pure Einstein gravity, the symmetries of the theory are enough to ensure that
+the one-loop S-matrix is finite. The first divergence occurs at two-loops and requires
+the introduction of a counterterm of the form,
+
+
+
+
+This makes the situation marginally worse, with the first diver-
+gence now appearing at one-loop. The Feynman diagram in the
+figure shows particle scattering through the exchange of two gravi-
+tons. When the momentum k running in the loop is large, the
+diagram is badly divergent: it scales as
+
+
+Non-renormalizable theories are commonplace in the history of physics, the most com-
+monly cited example being Fermi’s theory of the weak interaction. The first thing to say
+about them is that they are far from useless! Non-renormalizable theories are typically
+viewed as effective field theories, valid only up to some energy scale. One deals with
+the divergences by simply admitting ignorance beyond this scale and treating as a
+UV cut-off on any momentum integral. In this way, we get results which are valid to an
+accuracy of E/⇤ (perhaps raised to some power). In the case of the  p weak interaction,
+Fermi’s theory accurately predicts physics up to an energy scale of 1/GF 100 GeV.
+In the case of quantum gravity, Einstein’s theory works to an accuracy of (E/Mpl )2 .
+
+
+
+
+
+
+    However, non-renormalizable theories are typically unable to describe physics at their
+cut-off scale or beyond. This is because they are missing the true ultra-violet degrees
+of freedom which tame the high-energy behaviour. In the case of the weak force, these
+new degrees of freedom are the W and Z bosons. We would like to know what missing
+degrees of freedom are needed to complete gravity.
+
+
+Singularities
+Only a particle physicist would phrase all questions about the universe in terms of
+scattering amplitudes. In general relativity we typically think about the geometry as
+a whole, rather than bastardizing the Einstein-Hilbert action and discussing perturba-
+tions around flat space. In this language, the question of high-energy physics turns into
+one of short distance physics. Classical general relativity is not to be trusted in regions
+where the curvature of spacetime approaches the Planck scale and ultimately becomes
+singular. A quantum theory of gravity should resolve these singularities.
+
+
+   The question of spacetime singularities is morally equivalent to that of high-energy
+scattering. Both probe the ultra-violet nature of gravity. A spacetime geometry is
+made of a coherent collection of gravitons, just as the electric and magnetic fields in a
+laser are made from a collection of photons. The short distance structure of spacetime
+is governed – after Fourier transform – by high momentum gravitons. Understanding
+spacetime singularities and high-energy scattering are different sides of the same coin.
+
+
+  There are two situations in general relativity where singularity theorems tell us that
+the curvature of spacetime gets large: at the big bang and in the center of a black hole.
+These provide two of the biggest challenges to any putative theory of quantum gravity.
+
+
+Gravity is Subtle
+It is often said that general relativity contains the seeds of its own destruction. The
+theory is unable to predict physics at the Planck scale and freely admits to it. Problems
+such as non-renormalizability and singularities are, in a Rumsfeldian sense, known
+unknowns. However, the full story is more complicated and subtle. On the one hand,
+the issue of non-renormalizability may not quite be the crisis that it first appears. On
+the other hand, some aspects of quantum gravity suggest that general relativity isn’t
+as honest about its own failings as is usually advertised. The theory hosts a number of
+unknown unknowns, things that we didn’t even know that we didn’t know. We won’t
+have a whole lot to say about these issues in this course, but you should be aware of
+them. Here I mention only a few salient points.
+
+
+
+
+    Firstly, there is a key difference between Fermi’s theory of the weak interaction and
+gravity. Fermi’s theory
+                     p     was unable to provide predictions for any scattering process
+at energies above 1/GF . In contrast, if we scatter two objects at extremely high-
+energies in gravity — say, at energies E          Mpl — then we know exactly what will
+happen: we form a big black hole. We don’t need quantum gravity to tell us this.
+Classical general relativity is sufficient. If we restrict attention to scattering, the crisis
+of non-renormalizability is not problematic at ultra-high energies. It’s troublesome only
+within a window of energies around the Planck scale.
+
+
+   Similar caveats hold for singularities. If you are foolish enough to jump into a black
+hole, then you’re on your own: without a theory of quantum gravity, no one can tell you
+what fate lies in store at the singularity. Yet, if you are smart and stay outside of the
+black hole, you’ll be hard pushed to see any effects of quantum gravity. This is because
+Nature has conspired to hide Planck scale curvatures from our inquisitive eyes. In the
+case of black holes this is achieved through cosmic censorship which is a conjecture in
+classical general relativity that says singularities are hidden behind horizons. In the
+case of the big bang, it is achieved through inflation, washing away any traces from the
+very early universe. Nature appears to shield us from the effects of quantum gravity,
+whether in high-energy scattering or in singularities. I think it’s fair to say that no one
+knows if this conspiracy is pointing at something deep, or is merely inconvenient for
+scientists trying to probe the Planck scale.
+
+
+   While horizons may protect us from the worst excesses of singularities, they come
+with problems of their own. These are the unknown unknowns: difficulties that arise
+when curvatures are small and general relativity says “trust me”. The entropy of black
+holes and the associated paradox of information loss strongly suggest that local quan-
+tum field theory breaks down at macroscopic distance scales. Attempts to formulate
+quantum gravity in de Sitter space, or in the presence of eternal inflation, hint at similar
+difficulties. Ideas of holography, black hole complimentarity and the AdS/CFT corre-
+spondence all point towards non-local effects and the emergence of spacetime. These are
+the deep puzzles of quantum gravity and their relationship to the ultra-violet properties
+of gravity is unclear.
+
+
+  As a final thought, let me mention the one observation that has an outside chance of
+being related to quantum gravity: the cosmological constant. With an energy scale of
+⇤ 10 3 eV it appears to have little to do with ultra-violet physics. If it does have its
+origins in a theory of quantum gravity, it must either be due to some subtle “unknown
+unknown”, or because it is explained away as an environmental quantity as in string
+theory.
+
+
+ Is the Time Ripe?
+Our current understanding of physics, embodied in the standard model, is valid up to
+energy scales of 103 GeV. This is 15 orders of magnitude away from the Planck scale.
+Why do we think the time is now ripe to tackle quantum gravity? Surely we are like
+the ancient Greeks arguing about atomism. Why on earth do we believe that we’ve
+developed the right tools to even address the question?
+
+
+  The honest answer, I think, is hubris.
+
+
+   However, there is mild circumstantial evidence
+that the framework of quantum field theory might
+hold all the way to the Planck scale without any-
+thing very dramatic happening in between. The
+main argument is unification. The three coupling
+constants of Nature run logarithmically, meeting
+miraculously at the GUT energy scale of 1015 GeV.
+Just slightly later, the fourth force of Nature, grav-
+ity, joins them. While not overwhelming, this does
+provide a hint that perhaps quantum field theory
+                                                                  Figure 2:
+can be taken seriously at these ridiculous scales.
+Historically I suspect this was what convinced large parts of the community that it was
+ok to speak about processes at 1018 GeV.
+
+
+  Finally, perhaps the most compelling argument for studying physics at the Planck
+scale is that string theory does provide a consistent unified quantum theory of gravity
+and the other forces. Given that we have this theory sitting in our laps, it would be
+foolish not to explore its consequences. The purpose of these lecture notes is to begin
+this journey.

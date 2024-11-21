@@ -5,13 +5,11 @@ def download_file_from_google_drive(file_id):
     response = requests.get(url)
 
     if response.status_code == 200:
-        # Sauvegarde du fichier dans le dossier 'files' avec le même nom que l'ID du fichier
-        with open(f"files/{file_id}.txt", 'wb') as f:
+        with open(f"files/downloaded-file.txt", 'wb') as f:
             f.write(response.content)
-        print(f"File downloaded successfully.")
+        print(f"File downloaded successfully")
     else:
-        print(f"Failed to download file. Status code: {response.status_code}")
+        print(f"File couldn't be downlaoded")
 
-# Remplacez par votre ID de fichier Google Drive
-file_id = '1J9-xfK3HHHykRSCktKf2hdoVKpKKs7zo'
+file_id = '1x_xRse9KXn0M-6a1WlNa6XvWR-HpOjHT'
 download_file_from_google_drive(file_id)
