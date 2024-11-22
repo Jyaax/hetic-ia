@@ -2,6 +2,7 @@ import subprocess
 
 file_path = 'files/downloaded-file.txt'
 
+
 def ask_with_rag(question):
     with open(file_path, 'r', encoding='utf-8') as file:
         file_content = file.read()
